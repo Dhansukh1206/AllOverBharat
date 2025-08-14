@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply antialiased; }
+}
+
+@layer components {
+  .container-app { @apply max-w-6xl mx-auto px-4; }
+  .btn-primary { @apply inline-flex items-center justify-center px-5 h-11 rounded-xl bg-brand-primary text-white font-semibold hover:bg-brand-primaryDark transition-colors; }
+  .btn-ghost { @apply inline-flex items-center justify-center px-5 h-11 rounded-xl bg-brand-card text-brand-dark border border-brand-border hover:bg-brand-bg; }
+  .card { @apply bg-brand-card border border-brand-border rounded-2xl shadow-soft; }
+  .pill { @apply inline-flex items-center gap-2 rounded-full bg-brand-bg px-3 py-1 text-xs text-brand-primary; }
+  .title { @apply text-3xl font-extrabold tracking-tight text-brand-dark; }
+  .subtitle { @apply text-brand-dark/70; }
+}
