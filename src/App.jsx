@@ -8,9 +8,11 @@ export default function App() {
       <header className="bg-white/90 backdrop-blur border-b border-brand-border sticky top-0 z-20">
         <div className="container-app h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 font-extrabold text-brand-dark">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-accent text-brand-primary">
-              <MapPin className="h-5 w-5" />
-            </span>
+            <img
+              src="/images/logo.png"  
+              alt="AllOverBharat Logo"
+              className="h-10 w-auto object-contain"
+            />
             <span>AllOverBharat</span>
           </div>
 
