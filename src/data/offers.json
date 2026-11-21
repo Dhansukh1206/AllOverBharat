@@ -2,21 +2,33 @@
   {
     "title": "Monsoon Saver – Goa 20% OFF",
     "expires": "2025-09-30",
-    "description": "Get a flat 20% discount on all Goa packages booked this monsoon."
+    "description": "Get a flat 20% discount on all Goa packages booked this monsoon with complimentary sunset catamaran sails.",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1000&auto=format&fit=crop&q=80",
+    "code": "MONSOON20",
+    "discount": "20% OFF"
   },
   {
     "title": "Early Bird – Ladakh ₹3,000 OFF",
     "expires": "2025-10-15",
-    "description": "Book Ladakh trips before October 15th and save ₹3,000 instantly."
+    "description": "Book high-altitude Ladakh glamping expeditions in advance and save ₹3,000 per couple instantly.",
+    "image": "https://images.unsplash.com/photo-1701599346665-88d37f67fed0?w=1000&auto=format&fit=crop&q=80",
+    "code": "LADAKH3K",
+    "discount": "₹3,000 OFF"
   },
   {
-    "title": "Summer Sale – 20% Off",
+    "title": "Summer Heritage Retreat – 20% Off",
     "expires": "2025-06-30",
-    "description": "Enjoy special summer discounts on all domestic packages."
+    "description": "Enjoy royal hospitality in authentic heritage havelis across Jaipur and Udaipur with daily breakfast.",
+    "image": "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=1000&auto=format&fit=crop&q=80",
+    "code": "HERITAGE20",
+    "discount": "20% OFF"
   },
   {
-    "title": "Book Early & Save ₹2000",
+    "title": "Kashmir Serenade – Save ₹2,000",
     "expires": "2025-09-15",
-    "description": "Reserve your trip 3 months in advance and save ₹2,000."
+    "description": "Reserve your Dal Lake cedarwood houseboat experience early and receive a complimentary private Shikara tour.",
+    "image": "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=1000&auto=format&fit=crop&q=80",
+    "code": "KASHMIR2K",
+    "discount": "₹2,000 OFF"
   }
 ]

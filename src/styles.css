@@ -2,16 +2,161 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Font Thickness & Weight Tokens */
+  --font-heading-weight: 600;   /* Serif section & card headings */
+  --font-display-weight: 700;   /* Hero & primary h1 headlines */
+  --font-body-weight: 450;      /* Body copy thickness */
+  --font-kicker-weight: 600;    /* Eyebrow / Kicker tags */
+  --font-btn-weight: 600;       /* Buttons & action links */
+}
+
 @layer base {
-  * { @apply antialiased; }
+  * {
+    @apply antialiased;
+    border-color: #E5DFD5;
+  }
+
+  body {
+    background: 
+      radial-gradient(circle at 10% 8%, rgba(242, 135, 59, 0.14) 0%, transparent 50%),
+      radial-gradient(circle at 90% 12%, rgba(58, 117, 49, 0.12) 0%, transparent 45%),
+      radial-gradient(circle at 85% 82%, rgba(242, 135, 59, 0.10) 0%, transparent 50%),
+      radial-gradient(circle at 12% 90%, rgba(58, 117, 49, 0.12) 0%, transparent 45%),
+      linear-gradient(135deg, rgba(242, 135, 59, 0.05) 0%, #FAF8F5 35%, #FAF8F5 65%, rgba(58, 117, 49, 0.05) 100%),
+      #FAF8F5;
+    background-attachment: fixed;
+    color: #1C1917;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: var(--font-body-weight, 450);
+  }
+
+  h1 {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    font-weight: var(--font-display-weight, 700);
+    color: #1C1917;
+  }
+
+  h2, h3, .font-serif, .font-editorial {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    font-weight: var(--font-heading-weight, 600);
+    color: #1C1917;
+  }
 }
 
 @layer components {
-  .container-app { @apply max-w-6xl mx-auto px-4; }
-  .btn-primary { @apply inline-flex items-center justify-center px-5 h-11 rounded-xl bg-brand-primary text-white font-semibold hover:bg-brand-primaryDark transition-colors; }
-  .btn-ghost { @apply inline-flex items-center justify-center px-5 h-11 rounded-xl bg-brand-card text-brand-dark border border-brand-border hover:bg-brand-bg; }
-  .card { @apply bg-brand-card border border-brand-border rounded-2xl shadow-soft; }
-  .pill { @apply inline-flex items-center gap-2 rounded-full bg-brand-bg px-3 py-1 text-xs text-brand-primary; }
-  .title { @apply text-3xl font-extrabold tracking-tight text-brand-dark; }
-  .subtitle { @apply text-brand-dark/70; }
+  /* Container with generous magazine breathing room */
+  .container-app {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Editorial Category Kicker / Eyebrow */
+  .kicker {
+    font-size: 11px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: var(--font-kicker-weight, 600);
+    color: #68615A;
+  }
+
+  /* Editorial Primary CTA Button (Warm Sunset Saffron #F2873B) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 h-11 rounded-xl text-white text-xs tracking-wide transition-all duration-300 cursor-pointer shadow-sm;
+    font-weight: var(--font-btn-weight, 600);
+    background-color: #F2873B;
+  }
+  .btn-primary:hover {
+    background-color: #D8722B;
+  }
+
+  /* Subtle Hairline Ghost Button in Light Theme */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-5 h-11 rounded-xl bg-white/70 text-[#1C1917] border text-xs transition-all duration-300 cursor-pointer;
+    font-weight: var(--font-btn-weight, 600);
+    border-color: #E5DFD5;
+  }
+  .btn-ghost:hover {
+    background-color: #F2EDE4;
+  }
+
+  /* Elevated Card Surface with Crisp Editorial Hairline Border */
+  .card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5DFD5;
+    border-radius: 1rem;
+    color: #1C1917;
+    box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.04);
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Editorial Filter Pills */
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all duration-300;
+    background-color: #F2EDE4;
+    color: #68615A;
+    border: 1px solid transparent;
+  }
+  .pill:hover {
+    color: #1C1917;
+    background-color: #EAE3D8;
+    border-color: #E5DFD5;
+  }
+
+  .pill-active {
+    @apply inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-xs font-semibold text-white transition-all duration-300 shadow-sm;
+    background-color: #1C1917;
+    border: 1px solid #1C1917;
+  }
+
+  /* Deep Forest Highlight / Verified Badge */
+  .pill-tag {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider;
+    background-color: rgba(58, 117, 49, 0.10);
+    color: #2F6526;
+    border: 1px solid rgba(58, 117, 49, 0.22);
+  }
+
+  /* Editorial Titles */
+  .title {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.25rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: var(--font-display-weight, 700);
+    color: #1C1917;
+  }
+  @media (min-width: 640px) {
+    .title {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .title {
+      font-size: 3.75rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #68615A;
+    font-weight: var(--font-body-weight, 450);
+  }
+
+  /* Subtle bottom scrim for photography overlay */
+  .scrim-bottom {
+    background: linear-gradient(to top, rgba(20, 18, 16, 0.88) 0%, rgba(20, 18, 16, 0.45) 55%, transparent 100%);
+  }
+
+  /* Unified Luxury Editorial Price Styling (Same Font Family & Same Color) */
+  .price-text, .font-price {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    color: #F2873B;
+    font-weight: 700;
+  }
 }

@@ -4,31 +4,71 @@
     "date": "2025-12-12",
     "price": 12999,
     "location": "Jaisalmer, Rajasthan",
-    "description": "Enjoy folk performances, camel races, and colorful cultural shows under starlit skies.",
-    "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFqYXN0aGFufGVufDB8fDB8fHww"
+    "description": "Enjoy folk performances, camel races, and colorful cultural shows under starlit skies in the golden dunes of the Thar Desert.",
+    "image": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Sam Sand Dunes Folk Fire Dance & Kalbeliya Music",
+      "Royal Turban Tying & Mr. Desert Pageant",
+      "Stargazing Luxury Swiss Dome Glamping"
+    ]
   },
   {
     "title": "Kerala Backwaters Weekend",
     "date": "2025-11-05",
     "price": 16998,
     "location": "Alleppey, Kerala",
-    "description": "Short escape in the lush green landscapes and tranquil lagoons of Kerala.",
-    "image": "https://plus.unsplash.com/premium_photo-1697729432049-caca66a1dab6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8a2VyZWxhfGVufDB8fDB8fHww"
+    "description": "Serene escape into the lush green palm landscapes, tranquil lagoons, and traditional snake-boat rhythms of God's Own Country.",
+    "image": "https://plus.unsplash.com/premium_photo-1697729432049-caca66a1dab6?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://plus.unsplash.com/premium_photo-1697729432049-caca66a1dab6?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Private Houseboat Lake Cruise with Live Chef",
+      "Traditional Kathakali Classical Drama Performance",
+      "Organic Spice Garden Walk and Ayurvedic Tea Tasting"
+    ]
   },
   {
     "title": "Pushkar Camel Fair",
     "date": "2025-11-15",
     "price": 4999,
     "location": "Pushkar, Rajasthan",
-    "description": "A vibrant fair with camel parades, competitions, and Rajasthani folk art.",
-    "image": "https://plus.unsplash.com/premium_photo-1697729460658-6a831a518d2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UHVzaGthciUyMENhbWVsJTIwRmFpcnxlbnwwfHwwfHx8MA%3D%3D"
+    "description": "A world-renowned vibrant gathering featuring decorated camel parades, hot air ballooning, sacred lake ghat aarti, and Rajasthani folk arts.",
+    "image": "https://plus.unsplash.com/premium_photo-1697729460658-6a831a518d2a?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://plus.unsplash.com/premium_photo-1697729460658-6a831a518d2a?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Hot Air Balloon Dawn Sunrise Flight Over Fairgrounds",
+      "Pushkar Lake Evening Maha Aarti with 108 Lamps",
+      "Handicraft Leather and Silver Jewelry Bazaars"
+    ]
   },
   {
-    "title": "Rann Utsav",
+    "title": "Rann Utsav White Desert Festival",
     "date": "2025-12-01",
     "price": 7999,
     "location": "Kutch, Gujarat",
-    "description": "White desert under moonlight, cultural programs, and handicraft markets.",
-    "image": "https://images.unsplash.com/photo-1578666644260-91d4eb13ac2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc2VydCUyMGZlc3RpdmFsfGVufDB8fDB8fHww"
+    "description": "Ethereal endless salt flats shimmering under the full moon, royal tent city luxury, Kutchi embroidery, and soulful Sufi melodies.",
+    "image": "https://images.unsplash.com/photo-1578666644260-91d4eb13ac2a?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1578666644260-91d4eb13ac2a?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Full Moon White Desert Camel Cart Ride",
+      "Artisan Rogan Painting & Bandhani Weaving Workshops",
+      "Kala Dungar (Black Hill) Sunset Panorama"
+    ]
   }
 ]

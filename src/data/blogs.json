@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "slug": "secret-havelis-of-shekhawati",
+    "title": "The Secret Havelis of Shekhawati: Open-Air Fresco Galleries in the Thar",
+    "author": "Aanya Sengupta",
+    "date": "2025-10-18",
+    "readTime": "5 min read",
+    "category": "Architectural Heritage",
+    "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    "excerpt": "Hidden in the arid heart of northern Rajasthan, centuries-old painted mansions hold glorious visual chronicles of silk route caravans, royal courts, and forgotten craftsmanship.",
+    "content": "Before railway networks spanned across the subcontinent, the Marwari merchants of Shekhawati built grand ancestral havelis as monuments to their prosperity. Adorned inside and out with intricate fresco murals painted using natural mineral pigments, these grand courtyards tell visual stories ranging from Hindu epics to early 20th-century flying machines. Walking through the quiet lanes of Mandawa and Nawalgarh reveals an unhurried, living heritage museum far from crowded tourist trails."
+  },
+  {
+    "id": 2,
+    "slug": "dawn-on-sacred-ghats-varanasi",
+    "title": "Dawn on the Sacred Ghats: Why Varanasi Still Transforms Mindful Travelers",
+    "author": "Kabir Mathur",
+    "date": "2025-09-24",
+    "readTime": "7 min read",
+    "category": "Spiritual Journeys",
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1200&auto=format&fit=crop&q=80",
+    "excerpt": "As morning conch shells echo across Dashashwamedh and golden mist rises above Mother Ganga, the timeless continuum of life, devotion, and eternity unfolds.",
+    "content": "To experience Varanasi is to step outside linear time. Boarding a wooden hand-rowed boat before dawn at Assi Ghat, one witnesses the ancient city awaken through rituals unchanged for three millennia. Monks chanting Vedic verses in resonant cadence, pilgrims offering marigold blossoms to the sacred river, and saffron mist parting to reveal centuries-old stone spires."
+  },
+  {
+    "id": 3,
+    "slug": "beyond-beaches-portuguese-goa",
+    "title": "Beyond the Coast: Into Fontainhas and Secret Spice Plantations",
+    "author": "Elena D'Souza",
+    "date": "2025-08-30",
+    "readTime": "4 min read",
+    "category": "Culture & Gastronomy",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&auto=format&fit=crop&q=80",
+    "excerpt": "Walk the cobalt and ochre lanes of Panaji's Latin Quarter, converse with third-generation bakers, and taste slow-braised vindaloo in secluded hinterland estates.",
+    "content": "While Goa's coastline claims international acclaim, its interior valleys and heritage precincts harbor a tranquil, nuanced elegance. In Fontainhas, Portuguese-tiled villas painted in deep indigo, burnt sienna, and mustard yellow retain wrought-iron balconies and red-tiled roofs. Further east into Ponda, centuries-old organic spice farms offer private walks beneath nutmeg, cardamon, and vanilla canopies accompanied by authentic Saraswat thalis."
+  },
+  {
+    "id": 4,
+    "slug": "rann-utsav-full-moon-guide",
+    "title": "The Infinite White Mirror: A Guide to the Full Moon at Rann of Kutch",
+    "author": "Devendra Rathore",
+    "date": "2025-11-02",
+    "readTime": "6 min read",
+    "category": "Seasonal Expeditions",
+    "image": "https://images.unsplash.com/photo-1578666644260-91d4eb13ac2a?w=1200&auto=format&fit=crop&q=80",
+    "excerpt": "Under the celestial brilliance of the winter full moon, the Great Rann transforms into a surreal white desert expanse where earth dissolves into the starlit sky.",
+    "content": "Stretching toward the horizon like an unblemished sheet of crystallized silver, the salt marshes of the Rann of Kutch present one of earth's most spellbinding nocturnal landscapes. During the annual winter festival, travelers can witness Kutchi artisans craft intricate Rogan oil art, listen to soulful Sufi desert ballads around desert campfires, and embark on midnight camel cart rides into the silence of the salt flats."
+  }
+]
+

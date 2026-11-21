@@ -6,9 +6,47 @@
     "days": 4,
     "price": 8999,
     "subtitle": "Flights not included",
-    "description": "Relax on golden beaches, enjoy vibrant nightlife, and savor Goan seafood.",
+    "description": "Relax on golden beaches, enjoy vibrant nightlife, and savor Goan seafood in coastal Portuguese courtyards.",
     "location": "Goa, India",
-    "image": "https://images.unsplash.com/photo-1576149544162-37539d592f2b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8R29hJTIwQmVhY2glMjBFc2NhcGV8ZW58MHx8MHx8fDA%3D"
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1576149544162-37539d592f2b?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Private Beach Cabana & Sunset Catamaran Cruise",
+      "Old Goa UNESCO Basilica of Bom Jesus Tour",
+      "Authentic Goan Seafood Tasting & Spice Plantation Lunch",
+      "Mandovi River Evening Musical Cruise"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "North Goa Arrival & Sunset Leisure",
+        "desc": "Chauffeur pickup from airport or station. Check-in to boutique beachfront resort, followed by welcome cocktails and a golden hour beach stroll.",
+        "image": "https://images.unsplash.com/photo-1576149544162-37539d592f2b?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Old Goa Heritage & Fontainhas Latin Quarter",
+        "desc": "Guided slow walk through UNESCO Basilica of Bom Jesus and pastel Portuguese villas in Panaji. Afternoon spice plantation lunch.",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Palolem Coconut Shores & Sunset Catamaran Sail",
+        "desc": "Scenic morning drive south to peaceful Palolem Beach. Private catamaran sail across the Arabian Sea with dolphin sightings.",
+        "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 4,
+        "title": "Anjuna Artisan Bazaars & Departure Transfer",
+        "desc": "Explore bohemian flea markets for cashews, feni, and handcrafted souvenirs before seamless airport drop-off.",
+        "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   },
   {
     "slug": "kashmir-paradise-tour",
@@ -17,9 +55,59 @@
     "days": 6,
     "price": 22500,
     "subtitle": "Breakfast included",
-    "description": "Snow-capped mountains, serene lakes, and colorful gardens await you in Kashmir.",
+    "description": "Snow-capped mountains, serene lakes, and colorful gardens await you in Kashmir with private Dal Lake houseboats.",
     "location": "Srinagar, Gulmarg, Pahalgam",
-    "image": "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8S2FzaG1pciUyMFBhcmFkaXNlfGVufDB8fDB8fHww"
+    "image": "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Private Cedar Wood Houseboat Stay on Dal Lake",
+      "Gulmarg Gondola Phase 2 Cable Car Ride (13,780 ft)",
+      "Betaab Valley & Aru Valley Chauffeur Excursion",
+      "Mughal Gardens Nishat & Shalimar Royal Walk"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Srinagar Arrival & Romantic Dal Lake Shikara",
+        "desc": "Chauffeur reception and transfer to luxury carved cedarwood houseboat. Sunset Shikara ride watching reflections over Char Chinar.",
+        "image": "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Gulmarg Apharwat Peak Gondola Snow Expedition",
+        "desc": "Ascend on the high-altitude cable car to snow-covered Apharwat Peak with panoramic vistas of the Pir Panjal range.",
+        "image": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Pahalgam Valley & Saffron Fields of Pampore",
+        "desc": "Drive through fragrant purple saffron fields to the Valley of Shepherds, checking into a boutique riverside pine lodge.",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 4,
+        "title": "Betaab Valley & Aru Mountain Streams",
+        "desc": "Explore pristine Betaab Valley where classic cinema was filmed. Gentle forest pony trail through Baisaran 'Mini Switzerland'.",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 5,
+        "title": "Mughal Terraced Gardens & Pashmina Artisans",
+        "desc": "Walk royal fountains at Nishat and Shalimar Bagh. Afternoon studio visit to Master Pashmina and Walnut Wood craftsmen.",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 6,
+        "title": "Floating Market Dawn & Airport Departure",
+        "desc": "Sunrise Shikara glide through Dal Lake's 150-year-old floating flower and vegetable market, followed by airport transfer.",
+        "image": "https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   },
   {
     "slug": "jaipur-heritage-getaway",
@@ -28,9 +116,41 @@
     "days": 3,
     "price": 6499,
     "subtitle": "City tour included",
-    "description": "Explore majestic forts, colorful bazaars, and rich Rajasthani culture.",
+    "description": "Explore majestic forts, colorful bazaars, and rich Rajasthani culture in the historic Pink City.",
     "location": "Jaipur, Rajasthan",
-    "image": "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8SmFpcHVyJTIwSGVyaXRhZ2UlMjBHZXRhd2F5fGVufDB8fDB8fHww"
+    "image": "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Private Amber Fort Jeep Ride & Sound/Light Show",
+      "Hawa Mahal & City Palace Royal Quarters Walk",
+      "Traditional Rajasthani Thali Dining at Chokhi Dhani",
+      "Johari Bazaar Gemstone & Block Print Shopping"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Jaipur Welcome, Jal Mahal & Chokhi Dhani Cultural Feast",
+        "desc": "Garland welcome and private haveli check-in. Photo-stop at water palace of Jal Mahal and authentic cultural thali night.",
+        "image": "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Amber Fort Ramparts & Nahargarh Sunset Vista",
+        "desc": "Jeep ascent to Amber Fort's Sheesh Mahal hall of mirrors. Tour Maharaja's City Palace and enjoy panoramic sunset tea.",
+        "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Hawa Mahal Golden Hour & Johari Bazaar Treasures",
+        "desc": "Morning golden-hour shoot at Hawa Mahal façade. Guided shopping for handcrafted blue pottery and block prints.",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   },
   {
     "slug": "leh-ladakh-adventure",
@@ -39,9 +159,65 @@
     "days": 7,
     "price": 34999,
     "subtitle": "Bike optional",
-    "description": "Experience rugged landscapes, high-altitude passes, and crystal-clear lakes.",
+    "description": "Experience rugged landscapes, high-altitude passes, and crystal-clear lakes on the rooftop of the world.",
     "location": "Leh, Nubra Valley, Pangong Lake",
-    "image": "https://images.unsplash.com/photo-1701599346665-88d37f67fed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGVoJTIwTGFkYWtoJTIwYmlrZSUyMHJpZGV8ZW58MHx8MHx8fDA%3D"
+    "image": "https://images.unsplash.com/photo-1701599346665-88d37f67fed0?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1701599346665-88d37f67fed0?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Cross Khardung La (18,380 ft) - World's Highest Motorable Pass",
+      "Double-Humped Bactrian Camel Safari in Hunder Sand Dunes",
+      "Stargazing Glamping at Blue Pangong Tso Lake",
+      "Thiksey Monastery Morning Prayer Chants & Magnetic Hill"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Leh Arrival & Rest for High-Altitude Acclimatization",
+        "desc": "Arrive at 11,500 ft. Transfer to boutique heated hotel. Dedicated day for gentle hydration and oxygen acclimatization.",
+        "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Shanti Stupa, Leh Royal Palace & Hall of Fame",
+        "desc": "Panoramic vistas of the Indus Valley from Shanti Stupa. Walk the ancient corridors of Leh Palace and Tibetan bazaar.",
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Over Khardung La Pass (18,380 ft) to Nubra Valley",
+        "desc": "Exhilarating drive over one of the highest motorable passes on Earth into the lush oasis of Nubra and Diskit Monastery.",
+        "image": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 4,
+        "title": "Hunder White Dunes & Double-Humped Camel Safari",
+        "desc": "Ride unique double-humped Bactrian camels across cold mountain sand dunes. Excursion to border village of Turtuk.",
+        "image": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 5,
+        "title": "Shyok River Route to Blue Pangong Tso Lake Glamping",
+        "desc": "Dramatic road journey following the turquoise Shyok River to Pangong Tso (14,270 ft). Stargazing by the lake.",
+        "image": "https://images.unsplash.com/photo-1701599346665-88d37f67fed0?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 6,
+        "title": "Pangong Dawn Glow & Return Over Chang La Pass",
+        "desc": "Watch the morning sun turn the lake deep azure. Scenic pass crossing at Chang La and return to Leh for farewell dinner.",
+        "image": "https://images.unsplash.com/photo-1701599346665-88d37f67fed0?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 7,
+        "title": "Farewell Leh & Airport Departure Transfer",
+        "desc": "Final apricot jam and prayer flag purchases before private chauffeur transfer to Kushok Bakula Airport.",
+        "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   },
   {
     "slug": "kerala-backwater-cruise",
@@ -50,9 +226,53 @@
     "days": 5,
     "price": 19800,
     "subtitle": "Private houseboat stay",
-    "description": "Sail through serene lagoons and witness Kerala's lush green beauty.",
+    "description": "Sail through serene lagoons and witness Kerala's lush green beauty on a luxury private Kettuvallam.",
     "location": "Alleppey, Kumarakom",
-    "image": "https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8S2VyYWxhJTIwQmFja3dhdGVyfGVufDB8fDB8fHww"
+    "image": "https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Exclusive Private Kettuvallam Houseboat with Personal Chef",
+      "Munnar Rolling Tea Gardens & Mattupetty Dam",
+      "Periyar Wildlife Sanctuary Boat Cruise in Thekkady",
+      "Ayurvedic Herbal Rejuvenation Massage Session"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Kochi Arrival & Waterfall Drive to Munnar Tea Hills",
+        "desc": "Scenic drive through Cheeyappara waterfalls to mist-covered Munnar. Check-in to plantation bungalow.",
+        "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Eravikulam National Park & Tata Tea Museum",
+        "desc": "Spot the rare Nilgiri Tahr mountain goats in the misty grasslands. Tasting session of orthodox highland teas.",
+        "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Cardamom Hills & Thekkady Spice Plantation Walk",
+        "desc": "Aromatic guided walk through organic pepper, cinnamon, and vanilla farms. Evening Kathakali dance recital.",
+        "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 4,
+        "title": "Alleppey Houseboat Boarding on Vembanad Lake",
+        "desc": "Embark on an air-conditioned luxury wooden houseboat. Savor freshly caught Karimeen fish prepared by personal chef.",
+        "image": "https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 5,
+        "title": "Dawn Backwater Serenade & Kochi Airport Transfer",
+        "desc": "Fresh appam and stew breakfast while gliding past coir makers. Disembark and transfer to Kochi Airport.",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   },
   {
     "slug": "andaman-island-escape",
@@ -61,18 +281,113 @@
     "days": 5,
     "price": 27500,
     "subtitle": "Snorkeling included",
-    "description": "Turquoise waters, coral reefs, and white sandy beaches await in Andaman.",
+    "description": "Turquoise waters, coral reefs, and white sandy beaches await in Andaman with high-speed catamaran island hopping.",
     "location": "Havelock Island, Neil Island",
-    "image": "https://images.unsplash.com/photo-1481325828126-d57127c9d39f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEFuZGFtYW4lMjBJc2xhbmQlMjBFc2NhcGV8ZW58MHx8MHx8fDA%3D"
+    "image": "https://images.unsplash.com/photo-1481325828126-d57127c9d39f?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1481325828126-d57127c9d39f?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Sunset at Asia's Best Beach — Radhanagar Beach (Beach No. 7)",
+      "Guided Snorkeling & Coral Reef Exploration at Elephant Beach",
+      "High-Speed Luxury Catamaran Ferry (Makruzz / Nautika)",
+      "Cellular Jail National Memorial & Sound and Light Show"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Port Blair Arrival & Cellular Jail Memorial",
+        "desc": "Chauffeur reception at Port Blair. Tour the historic Cellular Jail followed by the evening light and sound chronicle.",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Luxury Catamaran to Havelock & Radhanagar Sunset",
+        "desc": "Cruise across turquoise waters on a luxury catamaran. Afternoon on the powder-soft white sand of Radhanagar Beach.",
+        "image": "https://images.unsplash.com/photo-1481325828126-d57127c9d39f?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Elephant Beach Speedboat & Guided Coral Snorkel",
+        "desc": "Speedboat into crystal reef waters. Certified divemaster guided snorkeling over colorful living brain corals and clownfish.",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 4,
+        "title": "Neil Island Natural Bridge & Port Blair Return",
+        "desc": "Morning ferry to Neil Island. Walk the natural limestone coral bridge and Bharatpur beach before return ferry to Port Blair.",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 5,
+        "title": "Seashell Bazaars & Airport Farewell",
+        "desc": "Morning handicraft souvenir shopping at Sagarika Cottage Emporium before private airport departure transfer.",
+        "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   },
   {
     "slug": "golden-triangle",
     "title": "Golden Triangle Tour",
+    "nights": 5,
     "days": 6,
     "price": 15999,
     "subtitle": "Cultural highlights",
-    "description": "Discover Delhi, Agra, and Jaipur — the heart of India's history.",
+    "description": "Discover Delhi, Agra, and Jaipur — the majestic heart of India's royal history and architecture.",
     "location": "Delhi, Agra, Jaipur",
-    "image": "https://plus.unsplash.com/premium_photo-1686090450592-aca413579d36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEdvbGRlbiUyMFRyaWFuZ2xlJTIwVG91cnxlbnwwfHwwfHx8MA%3D%3D"
+    "image": "https://plus.unsplash.com/premium_photo-1686090450592-aca413579d36?w=1200&auto=format&fit=crop&q=80",
+    "gallery": [
+      "https://plus.unsplash.com/premium_photo-1686090450592-aca413579d36?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format&fit=crop&q=80"
+    ],
+    "highlights": [
+      "Sunrise View of the Iconic Taj Mahal in Agra",
+      "Agra Fort & Fatehpur Sikri Red Sandstone Palaces",
+      "Amber Fort Elephant/Jeep Ascent & Hawa Mahal in Jaipur",
+      "Old Delhi Rickshaw Ride through Chandni Chowk & Qutub Minar"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Delhi Arrival & Imperial Architectural Landmarks",
+        "desc": "Chauffeur reception. Guided walk at UNESCO Qutub Minar, Humayun's Tomb, and drive along India Gate ceremonial boulevard.",
+        "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 2,
+        "title": "Old Delhi Rickshaw & Yamuna Expressway to Agra",
+        "desc": "Cycle rickshaw tour through Chandni Chowk spice markets. Afternoon express highway drive to Mughal Agra.",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 3,
+        "title": "Dawn Sunrise at Taj Mahal & Fatehpur Sikri Palaces",
+        "desc": "Witness ethereal golden dawn light on the white marble dome of the Taj Mahal. Explore red sandstone Fatehpur Sikri en route to Jaipur.",
+        "image": "https://plus.unsplash.com/premium_photo-1686090450592-aca413579d36?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 4,
+        "title": "Amber Fort Hilltop Jeep & City Palace Museums",
+        "desc": "Ascend Amber Fort's battlements by 4x4 Jeep. Tour the Maharaja's private City Palace armory and astronomical observatory.",
+        "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 5,
+        "title": "Hawa Mahal Façade & Sunset High at Nahargarh",
+        "desc": "Morning golden-hour shoot at Hawa Mahal. Panoramic sunset tea at Nahargarh Fort overlooking the Pink City.",
+        "image": "https://images.unsplash.com/photo-1662041736665-9f3fa6417605?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "day": 6,
+        "title": "Jaipur to Delhi Scenic Highway Transfer",
+        "desc": "Morning relaxation before comfortable private chauffeur drive back to Delhi Airport for onward travels.",
+        "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&auto=format&fit=crop&q=80"
+      }
+    ]
   }
 ]
