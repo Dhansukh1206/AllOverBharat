@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <div className="container-app my-6 sm:my-10 pb-24">
-            <section className="mt-2">
+      <section className="mt-2">
         <div className="relative w-full h-84 sm:h-96 md:h-[460px] overflow-hidden rounded-3xl border border-brand-border bg-brand-charcoal">
           <img
             src={featuredPackages[currentSlide].image}
@@ -61,7 +61,7 @@ export default function Home() {
             className="w-full h-full object-cover transition-opacity duration-1000 ease-out"
           />
 
-                    <div
+          <div
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
@@ -69,18 +69,18 @@ export default function Home() {
             }}
           />
 
-                    <div className="absolute bottom-8 left-6 sm:left-10 right-6 sm:right-10 text-[#FAF8F5] max-w-xl">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-editorial tracking-tightest">
+          <div className="absolute bottom-8 left-6 sm:left-10 right-6 sm:right-10 max-w-xl">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
               {featuredPackages[currentSlide].title}
             </h2>
-            <div className="flex items-center gap-3 text-xs sm:text-sm text-[#FAF8F5]/85 font-medium mt-2">
+            <div className="flex items-center gap-3 text-xs sm:text-sm text-[#FAF8F5]/90 font-medium mt-2">
               <span className="flex items-center gap-1">
                 <MapPin className="h-3.5 w-3.5 text-brand-terracotta" />
                 {featuredPackages[currentSlide].location}
               </span>
               <span>•</span>
               <span className="flex items-center gap-1">
-                <CalendarDays className="h-3.5 w-3.5 text-[#FAF8F5]" />
+                <CalendarDays className="h-3.5 w-3.5 text-brand-terracotta" />
                 {featuredPackages[currentSlide].days} Days /{" "}
                 {featuredPackages[currentSlide].nights} Nights
               </span>
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
           </div>
 
-                    <div className="absolute bottom-6 right-8 flex gap-2 z-10">
+          <div className="absolute bottom-6 right-8 flex gap-2 z-10">
             {featuredPackages.map((_, idx) => (
               <button
                 key={idx}
@@ -109,8 +109,8 @@ export default function Home() {
                 aria-label={`Go to slide ${idx + 1}`}
                 className={`h-1.5 transition-all duration-300 rounded-full cursor-pointer ${
                   idx === currentSlide
-                    ? "w-7 bg-[#FAF8F5]"
-                    : "w-2 bg-[#FAF8F5]/40"
+                    ? "w-7 bg-brand-terracotta"
+                    : "w-2 bg-brand-taupe/50"
                 }`}
               />
             ))}
@@ -118,23 +118,22 @@ export default function Home() {
         </div>
       </section>
 
-            <div className="mt-14 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-brand-border">
+      <div className="mt-14 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-brand-border">
         <div>
-          <p className="kicker mb-1">CURATED ITINERARIES</p>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal tracking-tight">
             Current Tour Packages
           </h2>
         </div>
 
-                <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-2 flex-wrap">
           <span className="text-[11px] uppercase tracking-[0.14em] font-semibold text-brand-taupe mr-1">
             Sort by:
           </span>
           <button
             onClick={() => handleSortChange("featured")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
               sortBy === "featured"
-                ? "bg-brand-charcoal text-[#FAF8F5]"
+                ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
             }`}
           >
@@ -142,9 +141,9 @@ export default function Home() {
           </button>
           <button
             onClick={() => handleSortChange("price-asc")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
               sortBy === "price-asc"
-                ? "bg-brand-charcoal text-[#FAF8F5]"
+                ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
             }`}
           >
@@ -152,9 +151,9 @@ export default function Home() {
           </button>
           <button
             onClick={() => handleSortChange("price-desc")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
               sortBy === "price-desc"
-                ? "bg-brand-charcoal text-[#FAF8F5]"
+                ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
             }`}
           >
@@ -162,9 +161,9 @@ export default function Home() {
           </button>
           <button
             onClick={() => handleSortChange("duration-asc")}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
               sortBy === "duration-asc"
-                ? "bg-brand-charcoal text-[#FAF8F5]"
+                ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
             }`}
           >
@@ -173,7 +172,7 @@ export default function Home() {
         </div>
       </div>
 
-            <section>
+      <section>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           {packagesList.map((pkg) => (
             <PackageCard
@@ -185,7 +184,7 @@ export default function Home() {
         </div>
       </section>
 
-            {selectedPackage && (
+      {selectedPackage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-sm animate-fadeIn"
           onClick={handleCloseDetails}
@@ -194,7 +193,7 @@ export default function Home() {
             className="bg-brand-canvas rounded-3xl border border-brand-border shadow-2xl max-w-4xl w-full max-h-[92vh] overflow-y-auto flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-                        <div className="sticky top-0 bg-[#FAF8F5]/95 backdrop-blur-md px-6 py-4 border-b border-brand-border flex items-center justify-between z-20">
+            <div className="sticky top-0 bg-[#FAF8F5]/95 backdrop-blur-md px-6 py-4 border-b border-brand-border flex items-center justify-between z-20">
               <div className="flex items-center gap-2">
                 <span className="pill-tag">{selectedPackage.location}</span>
                 <span className="text-xs text-brand-taupe font-semibold">
@@ -210,8 +209,8 @@ export default function Home() {
               </button>
             </div>
 
-                        <div className="p-6 sm:p-8 space-y-8">
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <div className="p-6 sm:p-8 space-y-8">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                 <div className="lg:col-span-7 space-y-3">
                   <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-brand-border bg-brand-charcoal">
                     <img
@@ -221,7 +220,7 @@ export default function Home() {
                     />
                   </div>
 
-                                    {selectedPackage.gallery &&
+                  {selectedPackage.gallery &&
                     selectedPackage.gallery.length > 0 && (
                       <div className="grid grid-cols-4 gap-2">
                         {selectedPackage.gallery.map((img, i) => (
@@ -254,7 +253,7 @@ export default function Home() {
                       {selectedPackage.description}
                     </p>
 
-                                        {selectedPackage.highlights && (
+                    {selectedPackage.highlights && (
                       <div className="mt-4 space-y-2">
                         <p className="text-[10px] uppercase tracking-[0.14em] font-semibold text-brand-taupe">
                           Expedition Highlights
@@ -276,7 +275,7 @@ export default function Home() {
                     )}
                   </div>
 
-                                    <div 
+                  <div
                     className="mt-6 p-4 rounded-2xl border border-white/80 shadow-sm"
                     style={{
                       backdropFilter: "blur(14px)",
@@ -294,7 +293,7 @@ export default function Home() {
                 </div>
               </div>
 
-                            {selectedPackage.itinerary &&
+              {selectedPackage.itinerary &&
                 selectedPackage.itinerary.length > 0 && (
                   <div className="border-t border-brand-border pt-6">
                     <p className="kicker mb-1">CHRONICLE OF DISCOVERY</p>
@@ -419,7 +418,7 @@ export default function Home() {
             </div>
 
             <div className="sticky bottom-0 bg-[#FAF8F5]/95 backdrop-blur-md px-6 py-4 border-t border-brand-border flex flex-col sm:flex-row gap-3 z-20">
-                            <a
+              <a
                 href={`https://wa.me/911800242728?text=Hello%20AllOverBharat%20Concierge,%20I%20have%20an%20enquiry%20regarding%20the%20${encodeURIComponent(
                   selectedPackage.title,
                 )}%20journey.`}
@@ -431,7 +430,7 @@ export default function Home() {
                 <span>Enquiry</span>
               </a>
 
-                            <button
+              <button
                 onClick={() => setBookingSlotModal(!bookingSlotModal)}
                 className="btn-primary flex-1 text-center py-3 flex items-center justify-center gap-2 cursor-pointer"
               >

@@ -1,22 +1,18 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         brand: {
-          // Warm Alabaster Light Theme Tokens
-          canvas: "#FAF8F5",       // Warm Ivory / Alabaster Canvas Base
-          sand: "#F2EDE4",         // Soft Sand Pill / Inactive Surface
-          card: "#FFFFFF",         // Crisp White Elevated Card
-          charcoal: "#1C1917",     // Deep Warm Obsidian Primary Text
-          taupe: "#68615A",        // Secondary Soft Taupe Text
-          terracotta: "#F2873B",   // Vibrant Sunset Saffron-Terracotta (Matching Logo)
+          canvas: "#FAF8F5",
+          sand: "#F2EDE4",
+          card: "#FFFFFF",
+          charcoal: "#1C1917",
+          taupe: "#68615A",
+          terracotta: "#F2873B",
           terracottaDark: "#D8722B",
-          forest: "#3A7531",       // Adventure Forest Green (Matching Logo)
-          border: "#E5DFD5",       // Crisp Editorial Hairline Border
-
-          // Semantic Aliases for compatibility
+          forest: "#3A7531",
+          border: "#E5DFD5",
           primary: "#F2873B",
           primaryDark: "#D8722B",
           accent: "#3A7531",

@@ -6,7 +6,6 @@ export default function About() {
   return (
     <div className="bg-transparent min-h-screen py-10 sm:py-16">
       <div className="container-app">
-        {/* Editorial Masthead */}
         <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-18">
           <p className="kicker mb-3">OUR PHILOSOPHY • SLOW LUXURY</p>
           <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-brand-charcoal leading-editorial tracking-tightest mb-6">
@@ -19,7 +18,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* 4 Pillars Grid: Responsive 1 col on mobile, 2 col on tablet, 4 col on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           <div className="card p-6 sm:p-8 text-left transition-all duration-300 hover:border-brand-charcoal/20 bg-white shadow-xs">
             <span className="text-2xl mb-4 block">🏛️</span>
@@ -66,7 +64,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Leadership & Company Team Section */}
         <div className="max-w-5xl mx-auto mb-20">
           <div className="text-center mb-10">
             <p className="kicker mb-2">LEADERSHIP & CRAFT • COMPANY TEAM</p>
@@ -80,7 +77,6 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Founder Profile */}
             <div className="card p-6 sm:p-8 flex flex-col justify-between bg-white shadow-xs">
               <div>
                 <div className="flex items-center gap-4 mb-5">
@@ -117,7 +113,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Developer Profile: Dhansukh Katariya */}
             <div className="card p-6 sm:p-8 flex flex-col justify-between bg-white shadow-xs">
               <div>
                 <div className="flex items-center gap-4 mb-5">
@@ -163,7 +158,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Editorial Stats Ribbon */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center py-10 px-4 border border-brand-border mb-20 bg-white/70 backdrop-blur-md rounded-2xl shadow-xs">
           <div>
             <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-charcoal">

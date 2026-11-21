@@ -8,7 +8,6 @@ export default function Blogs() {
 
   return (
     <div className="container-app my-8 sm:my-12">
-      {/* Editorial Page Header */}
       <div className="rounded-3xl border border-brand-border bg-white/70 backdrop-blur-md p-6 sm:p-10 mb-10 transition-all shadow-xs">
         <p className="kicker mb-2">EDITORIAL DISPATCHES • BHARAT STORIES</p>
         <h1 className="font-serif text-3xl sm:text-5xl font-bold tracking-tightest leading-editorial text-brand-charcoal mb-3">
@@ -33,7 +32,6 @@ export default function Blogs() {
             onClick={() => setSelectedArticle(b)}
           >
             <div>
-              {/* Hero Image */}
               <div className="aspect-[16/10] overflow-hidden bg-brand-charcoal relative">
                 <img
                   src={b.image}
@@ -48,7 +46,6 @@ export default function Blogs() {
                 </span>
               </div>
 
-              {/* Body */}
               <div className="p-6 sm:p-8">
                 <div className="flex items-center gap-2 text-xs text-brand-taupe mb-2 font-medium">
                   <span>By {b.author}</span>
@@ -88,7 +85,6 @@ export default function Blogs() {
         ))}
       </div>
 
-      {/* Article Detail Reading Lightbox */}
       {selectedArticle && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-sm animate-fadeIn"

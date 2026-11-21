@@ -80,7 +80,6 @@ const DEFAULT_PREVIOUS_TRIPS = [
 ];
 
 export default function Profile() {
-  // Load profile from localStorage or fallback to defaults
   const [profile, setProfile] = useState(() => {
     try {
       const saved = localStorage.getItem("alloverbharat_user_profile");
@@ -90,7 +89,6 @@ export default function Profile() {
     }
   });
 
-  // Load previous trips from localStorage or fallback
   const [previousTrips, setPreviousTrips] = useState(() => {
     try {
       const saved = localStorage.getItem("alloverbharat_previous_trips");
@@ -100,7 +98,6 @@ export default function Profile() {
     }
   });
 
-  // Form edit state
   const [formData, setFormData] = useState({
     firstName: profile.firstName || "",
     lastName: profile.lastName || "",
@@ -111,7 +108,6 @@ export default function Profile() {
   const [savedSuccess, setSavedSuccess] = useState(false);
   const [selectedDocket, setSelectedDocket] = useState(null);
 
-  // New trip modal state
   const [showAddTripModal, setShowAddTripModal] = useState(false);
   const [newTripData, setNewTripData] = useState({
     title: "",
@@ -206,11 +202,9 @@ export default function Profile() {
 
   return (
     <div className="container-app my-8 sm:my-12 pb-24">
-      {/* Editorial Profile Header Dossier */}
       <div className="card p-6 sm:p-10 mb-12 bg-white shadow-xs relative overflow-hidden">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
           <div className="flex items-center gap-5">
-            {/* Elegant Monogram Avatar with High-Visibility Border */}
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white border-2 border-[#1C1917]/80 ring-4 ring-[#F2873B]/20 flex items-center justify-center font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal flex-shrink-0 shadow-sm">
               {userInitials}
             </div>
@@ -242,7 +236,6 @@ export default function Profile() {
             </div>
           </div>
 
-          {/* Profile Stats Ribbon */}
           <div className="flex items-center gap-6 sm:gap-8 pt-4 md:pt-0 border-t md:border-t-0 border-brand-border w-full md:w-auto justify-around md:justify-end">
             <div className="text-center">
               <span className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal block">
@@ -266,7 +259,6 @@ export default function Profile() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-        {/* Left Column: Personal Information Form (First Name, Last Name, Phone, Email) */}
         <div className="lg:col-span-5 card p-6 sm:p-8 bg-white shadow-xs">
           <div className="flex items-center justify-between pb-4 mb-6 border-b border-brand-border">
             <div>
@@ -280,7 +272,6 @@ export default function Profile() {
             </div>
           </div>
 
-          {/* Form */}
           <form onSubmit={handleSaveProfile} className="space-y-4">
             {savedSuccess && (
               <div className="p-3.5 rounded-xl bg-brand-forest/10 border border-brand-forest/30 flex items-center gap-2.5 text-xs text-brand-forest font-semibold animate-fadeIn">
@@ -377,7 +368,6 @@ export default function Profile() {
             </div>
           </form>
 
-          {/* Quiet Concierge Help Note */}
           <div className="mt-8 pt-6 border-t border-brand-border bg-brand-sand/40 -mx-6 -mb-6 sm:-mx-8 sm:-mb-8 p-6 rounded-b-2xl">
             <p className="text-[10px] uppercase tracking-[0.14em] font-semibold text-brand-taupe mb-1">
               PRIVILEGED CONCIERGE DESK
@@ -390,7 +380,6 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Right Column: Previous Trips Section */}
         <div className="lg:col-span-7 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 border-b border-brand-border">
             <div>
@@ -409,7 +398,6 @@ export default function Profile() {
             </button>
           </div>
 
-          {/* List of Previous Trips */}
           <div className="space-y-6">
             {previousTrips.map((trip) => (
               <div
@@ -417,7 +405,6 @@ export default function Profile() {
                 className="card overflow-hidden bg-white shadow-xs hover:border-brand-charcoal/30 transition-all duration-300"
               >
                 <div className="grid grid-cols-1 sm:grid-cols-12 gap-0">
-                  {/* Trip Photography */}
                   <div className="sm:col-span-5 relative aspect-[16/10] sm:aspect-auto overflow-hidden bg-brand-charcoal">
                     <img
                       src={trip.image}
@@ -429,7 +416,6 @@ export default function Profile() {
                     </div>
                   </div>
 
-                  {/* Trip Details */}
                   <div className="sm:col-span-7 p-6 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between gap-2 mb-1.5">
@@ -451,7 +437,6 @@ export default function Profile() {
                         <span>{trip.date}</span>
                       </div>
 
-                      {/* Highlights */}
                       {trip.highlights && trip.highlights.length > 0 && (
                         <div className="mt-3.5 space-y-1">
                           {trip.highlights.slice(0, 2).map((h, i) => (
@@ -469,7 +454,6 @@ export default function Profile() {
                       )}
                     </div>
 
-                    {/* Card Actions */}
                     <div className="mt-5 pt-3 border-t border-brand-border flex items-center justify-between">
                       <div>
                         <span className="text-[10px] text-brand-taupe uppercase tracking-wider block font-semibold">
@@ -504,7 +488,6 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* Docket Detail Lightbox Modal */}
       {selectedDocket && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-sm animate-fadeIn"
@@ -590,7 +573,6 @@ export default function Profile() {
         </div>
       )}
 
-      {/* Record a Past Trip Modal */}
       {showAddTripModal && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-sm animate-fadeIn"

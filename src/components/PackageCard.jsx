@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "../icons.jsx";
+import { ArrowRight, CalendarDays, MapPin } from "../icons.jsx";
 
 export default function PackageCard({ item, onSelect }) {
   const handleClick = (e) => {
@@ -15,13 +15,13 @@ export default function PackageCard({ item, onSelect }) {
       onClick={handleClick}
       className="group relative flex flex-col justify-end aspect-[3/4] overflow-hidden rounded-2xl border border-brand-border bg-brand-charcoal transition-all duration-300 cursor-pointer"
     >
-            <img
+      <img
         src={item.image}
         alt={item.title}
         className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
       />
 
-            <div
+      <div
         className="absolute inset-0 pointer-events-none transition-opacity duration-300"
         style={{
           background:
@@ -29,7 +29,7 @@ export default function PackageCard({ item, onSelect }) {
         }}
       />
 
-            <div className="absolute top-4 left-4 z-10 pointer-events-none">
+      <div className="absolute top-4 left-4 z-10 pointer-events-none">
         <span
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-[0.14em] font-bold text-brand-charcoal border border-white/80 shadow-[0_2px_10px_rgba(0,0,0,0.22)]"
           style={{
@@ -38,23 +38,24 @@ export default function PackageCard({ item, onSelect }) {
             background: "rgba(255, 255, 255, 0.75)",
           }}
         >
+          <CalendarDays className="h-3.5 w-3.5 text-brand-terracotta" />
           {item.days}D / {item.nights}N
         </span>
       </div>
 
-            <div className="relative z-10 flex flex-col justify-end text-[#FAF8F5]">
-                <div className="px-5 pb-3">
+      <div className="relative z-10 flex flex-col justify-end text-[#FAF8F5]">
+        <div className="px-5 pb-3">
           <h3 className="font-serif text-2xl font-bold leading-editorial text-[#FAF8F5] tracking-tight group-hover:underline underline-offset-4 decoration-1 decoration-[#FAF8F5]/60 transition-all">
             {item.title}
           </h3>
 
           <p className="text-[10px] uppercase tracking-[0.14em] font-semibold text-[#FAF8F5]/75 flex items-center gap-1.5 mt-1">
-            <span>📍</span>
+            <MapPin className="h-3.5 w-3.5 text-brand-terracotta" />
             <span>{item.location || "Incredible Bharat"}</span>
           </p>
         </div>
 
-                <div
+        <div
           className="w-full px-5 py-3.5 flex items-center justify-between border-t border-white/20 transition-all duration-300 group-hover:border-white/35"
           style={{
             backdropFilter: "blur(24px) saturate(160%)",

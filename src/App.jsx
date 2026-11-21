@@ -15,7 +15,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen text-brand-charcoal flex flex-col selection:bg-brand-sand selection:text-brand-charcoal bg-transparent">
-      {/* Editorial Glass Top Navigation Bar: Simple heavy blur without background color, no bottom border */}
       <header
         className="sticky top-0 z-30 transition-all duration-300 bg-transparent"
         style={{
@@ -24,7 +23,6 @@ export default function App() {
         }}
       >
         <div className="container-app h-20 flex items-center justify-between">
-          {/* Brand Logo in Light Frosted Glass Capsule */}
           <NavLink
             to="/"
             className="flex items-center gap-2.5 sm:gap-3 group px-3.5 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-[#E5DFD5] shadow-xs hover:bg-white/95 transition-all"
@@ -46,7 +44,6 @@ export default function App() {
             </div>
           </NavLink>
 
-          {/* Desktop Navigation Option Buttons in Light Frosted Glass Capsule */}
           <nav className="hidden md:flex items-center gap-1 p-1 rounded-full bg-white/80 backdrop-blur-md border border-[#E5DFD5] shadow-xs text-xs font-semibold uppercase tracking-[0.14em]">
             <NavLink
               to="/"
@@ -90,7 +87,6 @@ export default function App() {
             </NavLink>
           </nav>
 
-          {/* Header Right Profile Option: Icon Only with High-Visibility Border & Light Surface */}
           <div className="flex items-center gap-3">
             <NavLink
               to="/profile"
@@ -110,12 +106,10 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main View Area */}
       <main className="flex-1 pb-20 md:pb-0">
         <Outlet />
       </main>
 
-      {/* Editorial Mobile Bottom Navigation Bar with Matching Cohesive Vector Icons */}
       <nav
         className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-xl border-t border-[#E5DFD5] py-2 px-3 flex items-center justify-around text-[10px] font-semibold uppercase tracking-wider shadow-lg"
         aria-label="Mobile Navigation"
@@ -193,7 +187,6 @@ export default function App() {
         </NavLink>
       </nav>
 
-      {/* Quiet Editorial Magazine Footer */}
       <footer className="border-t border-[#E5DFD5] bg-transparent mt-24 py-16 transition-colors duration-300">
         <div className="container-app flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
