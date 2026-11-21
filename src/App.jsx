@@ -16,18 +16,27 @@ export default function App() {
   return (
     <div className="min-h-screen text-brand-charcoal flex flex-col selection:bg-brand-sand selection:text-brand-charcoal bg-transparent">
       <header
-        className="sticky top-0 z-30 transition-all duration-300 bg-transparent"
-        style={{
-          backdropFilter: "blur(36px) saturate(180%)",
-          WebkitBackdropFilter: "blur(36px) saturate(180%)",
-        }}
+        className={`sticky top-0 z-30 transition-all duration-500 relative overflow-hidden ${
+          isScrolled
+            ? "bg-[#FAF8F5]/65 backdrop-blur-xl border-b border-[#E5DFD5]/80 shadow-[0_4px_24px_-4px_rgba(28,25,23,0.05)]"
+            : "bg-[#FAF8F5]/40 backdrop-blur-md border-b border-[#E5DFD5]/30"
+        }`}
       >
-        <div className="container-app h-20 flex items-center justify-center md:justify-between">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
+          <img
+            src="/images/header-texture.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center opacity-[0.09] mix-blend-multiply"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FAF8F5]/20 to-transparent" />
+        </div>
+
+        <div className="container-app h-20 flex items-center justify-center md:justify-between relative z-10">
           <NavLink
             to="/"
-            className="flex items-center gap-2.5 sm:gap-3 group px-3.5 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-[#E5DFD5] shadow-xs hover:bg-white/95 transition-all"
+            className="flex items-center gap-2.5 sm:gap-3 group px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-md border border-[#E5DFD5] shadow-xs hover:bg-white hover:border-[#F2873B]/40 hover:shadow-sm transition-all duration-300"
           >
-            <div className="w-9 h-9 rounded-full overflow-hidden border border-[#E5DFD5] flex items-center justify-center bg-white shadow-xs transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
+            <div className="w-9 h-9 rounded-full overflow-hidden border border-[#E5DFD5] ring-2 ring-[#3A7531]/20 flex items-center justify-center bg-white shadow-xs transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
               <img
                 src="/images/logo.png"
                 alt="AllOverBharat Logo"
@@ -39,18 +48,18 @@ export default function App() {
                 AllOver
                 <span className="text-[#F2873B] italic font-bold">Bharat</span>
               </span>
-              <span className="text-[8px] uppercase tracking-[0.2em] text-[#3A7531] font-bold -mt-0.5">
+              <span className="text-[8px] uppercase tracking-[0.22em] text-[#3A7531] font-bold -mt-0.5">
                 Adventure & Travel
               </span>
             </div>
           </NavLink>
 
-          <nav className="hidden md:flex items-center gap-1 p-1 rounded-full bg-white/80 backdrop-blur-md border border-[#E5DFD5] shadow-xs text-xs font-semibold uppercase tracking-[0.14em]">
+          <nav className="hidden md:flex items-center gap-1 p-1 rounded-full bg-white/85 backdrop-blur-md border border-[#E5DFD5] shadow-xs text-xs font-semibold uppercase tracking-[0.14em]">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-[#F2873B] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
+                  ? "bg-gradient-to-r from-[#F2873B] to-[#E2762A] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
                   : "text-[#68615A] hover:text-[#1C1917] hover:bg-black/5 px-3.5 py-1.5 rounded-full transition-all duration-200"
               }
             >
@@ -60,7 +69,7 @@ export default function App() {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-[#F2873B] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
+                  ? "bg-gradient-to-r from-[#F2873B] to-[#E2762A] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
                   : "text-[#68615A] hover:text-[#1C1917] hover:bg-black/5 px-3.5 py-1.5 rounded-full transition-all duration-200"
               }
             >
@@ -70,7 +79,7 @@ export default function App() {
               to="/blogs"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-[#F2873B] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
+                  ? "bg-gradient-to-r from-[#F2873B] to-[#E2762A] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
                   : "text-[#68615A] hover:text-[#1C1917] hover:bg-black/5 px-3.5 py-1.5 rounded-full transition-all duration-200"
               }
             >
@@ -80,7 +89,7 @@ export default function App() {
               to="/offers"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-[#F2873B] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
+                  ? "bg-gradient-to-r from-[#F2873B] to-[#E2762A] text-white px-4 py-1.5 rounded-full transition-all duration-200 shadow-xs font-bold"
                   : "text-[#68615A] hover:text-[#1C1917] hover:bg-black/5 px-3.5 py-1.5 rounded-full transition-all duration-200"
               }
             >
