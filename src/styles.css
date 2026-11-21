@@ -153,10 +153,17 @@
     background: linear-gradient(to top, rgba(20, 18, 16, 0.88) 0%, rgba(20, 18, 16, 0.45) 55%, transparent 100%);
   }
 
-  /* Unified Luxury Editorial Price Styling (Same Font Family & Same Color) */
+  /* Unified Luxury Editorial Price Styling (Classic Indian Heritage Font) */
   .price-text, .font-price {
-    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Rozha One', 'Kurale', 'Playfair Display', Georgia, serif;
     color: #F2873B;
-    font-weight: 700;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

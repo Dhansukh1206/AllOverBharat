@@ -459,7 +459,7 @@ export default function Profile() {
                         <span className="text-[10px] text-brand-taupe uppercase tracking-wider block font-semibold">
                           Total Tariff
                         </span>
-                        <span className="font-serif text-lg font-bold text-brand-terracotta">
+                        <span className="font-price text-xl text-brand-terracotta tracking-wide">
                           ₹ {trip.price.toLocaleString("en-IN")}
                         </span>
                       </div>
@@ -551,7 +551,7 @@ export default function Profile() {
                 </div>
                 <div>
                   <span className="kicker block mb-1">INVESTMENT PAID</span>
-                  <p className="font-serif text-lg font-bold text-brand-terracotta">
+                  <p className="font-price text-2xl text-brand-terracotta tracking-wide">
                     ₹ {selectedDocket.price.toLocaleString("en-IN")}
                   </p>
                   <span className="pill-tag text-[9px] mt-1 inline-block">

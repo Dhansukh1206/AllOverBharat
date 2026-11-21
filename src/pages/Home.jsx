@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <div className="container-app my-6 sm:my-10 pb-24">
       <section className="mt-2">
-        <div className="relative w-full h-84 sm:h-96 md:h-[460px] overflow-hidden rounded-3xl border border-brand-border bg-brand-charcoal">
+        <div className="relative w-full min-h-[460px] sm:min-h-[420px] md:h-[480px] overflow-hidden rounded-3xl border border-brand-border bg-brand-charcoal">
           <img
             src={featuredPackages[currentSlide].image}
             alt={featuredPackages[currentSlide].title}
@@ -65,28 +65,30 @@ export default function Home() {
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                "linear-gradient(to top, rgba(28, 25, 23, 0.90) 0%, rgba(28, 25, 23, 0.45) 50%, rgba(28, 25, 23, 0.1) 100%)",
+                "linear-gradient(to top, rgba(28, 25, 23, 0.92) 0%, rgba(28, 25, 23, 0.50) 45%, rgba(28, 25, 23, 0.15) 80%, transparent 100%)",
             }}
           />
 
-          <div className="absolute bottom-8 left-6 sm:left-10 right-6 sm:right-10 max-w-xl">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+          <div className="absolute bottom-6 sm:bottom-8 left-4 sm:left-10 right-4 sm:right-10 max-w-xl z-10">
+            <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               {featuredPackages[currentSlide].title}
             </h2>
-            <div className="flex items-center gap-3 text-xs sm:text-sm text-[#FAF8F5]/90 font-medium mt-2">
+            <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm text-[#FAF8F5]/90 font-medium mt-2">
               <span className="flex items-center gap-1">
-                <MapPin className="h-3.5 w-3.5 text-brand-terracotta" />
-                {featuredPackages[currentSlide].location}
+                <MapPin className="h-3.5 w-3.5 text-brand-terracotta flex-shrink-0" />
+                <span>{featuredPackages[currentSlide].location}</span>
               </span>
-              <span>•</span>
+              <span className="text-[#FAF8F5]/50 hidden sm:inline">•</span>
               <span className="flex items-center gap-1">
-                <CalendarDays className="h-3.5 w-3.5 text-brand-terracotta" />
-                {featuredPackages[currentSlide].days} Days /{" "}
-                {featuredPackages[currentSlide].nights} Nights
+                <CalendarDays className="h-3.5 w-3.5 text-brand-terracotta flex-shrink-0" />
+                <span>
+                  {featuredPackages[currentSlide].days} Days /{" "}
+                  {featuredPackages[currentSlide].nights} Nights
+                </span>
               </span>
             </div>
-            <div className="mt-4 flex items-center gap-4">
-              <span className="font-serif text-2xl sm:text-3xl font-bold text-brand-terracotta">
+            <div className="mt-4 flex flex-wrap items-center justify-between sm:justify-start gap-3 sm:gap-4">
+              <span className="font-price text-2xl sm:text-3xl text-brand-terracotta tracking-wide">
                 ₹ {featuredPackages[currentSlide].price.toLocaleString("en-IN")}
               </span>
               <button
@@ -100,38 +102,42 @@ export default function Home() {
               </button>
             </div>
           </div>
+        </div>
 
-          <div className="absolute bottom-6 right-8 flex gap-2 z-10">
-            {featuredPackages.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentSlide(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-                className={`h-1.5 transition-all duration-300 rounded-full cursor-pointer ${
+        <div className="flex items-center justify-center gap-2 mt-4 sm:mt-5">
+          {featuredPackages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+              className="py-2 px-1 cursor-pointer flex items-center focus:outline-none"
+            >
+              <span
+                className={`h-2 transition-all duration-300 rounded-full block ${
                   idx === currentSlide
-                    ? "w-7 bg-brand-terracotta"
-                    : "w-2 bg-brand-taupe/50"
+                    ? "w-8 bg-brand-terracotta shadow-xs"
+                    : "w-2.5 bg-[#D6CFC4] hover:bg-brand-taupe"
                 }`}
               />
-            ))}
-          </div>
+            </button>
+          ))}
         </div>
       </section>
 
-      <div className="mt-14 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-brand-border">
+      <div className="mt-12 sm:mt-14 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-brand-border">
         <div>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal tracking-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-brand-charcoal tracking-tight">
             Current Tour Packages
           </h2>
         </div>
 
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-[11px] uppercase tracking-[0.14em] font-semibold text-brand-taupe mr-1">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
+          <span className="text-[11px] uppercase tracking-[0.14em] font-semibold text-brand-taupe mr-1 flex-shrink-0">
             Sort by:
           </span>
           <button
             onClick={() => handleSortChange("featured")}
-            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer flex-shrink-0 ${
               sortBy === "featured"
                 ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
@@ -141,7 +147,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => handleSortChange("price-asc")}
-            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer flex-shrink-0 ${
               sortBy === "price-asc"
                 ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
@@ -151,7 +157,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => handleSortChange("price-desc")}
-            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer flex-shrink-0 ${
               sortBy === "price-desc"
                 ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
@@ -161,7 +167,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => handleSortChange("duration-asc")}
-            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer ${
+            className={`px-3.5 py-1.5 rounded-full text-xs border border-brand-border font-semibold transition-all duration-200 cursor-pointer flex-shrink-0 ${
               sortBy === "duration-asc"
                 ? "bg-brand-terracotta text-[#FAF8F5]"
                 : "bg-brand-sand text-brand-taupe hover:text-brand-charcoal"
@@ -286,7 +292,7 @@ export default function Home() {
                     <span className="text-[10px] uppercase tracking-[0.14em] text-brand-taupe block font-semibold">
                       Tariff Per Traveler
                     </span>
-                    <span className="font-serif text-3xl font-bold text-brand-terracotta drop-shadow-xs">
+                    <span className="font-price text-3xl sm:text-4xl text-brand-terracotta drop-shadow-xs tracking-wide">
                       ₹ {selectedPackage.price.toLocaleString("en-IN")}
                     </span>
                   </div>
@@ -397,7 +403,7 @@ export default function Home() {
                         <span className="text-xs font-semibold text-brand-charcoal">
                           Total Estimated Investment:
                         </span>
-                        <span className="font-serif text-2xl font-bold text-brand-terracotta">
+                        <span className="font-price text-2xl sm:text-3xl text-brand-terracotta tracking-wide">
                           ₹{" "}
                           {(
                             selectedPackage.price * travelersCount

@@ -24,6 +24,7 @@ export default {
       fontFamily: {
         serif: ["'Playfair Display'", "'Cormorant Garamond'", "Georgia", "serif"],
         display: ["'Playfair Display'", "'Cormorant Garamond'", "Georgia", "serif"],
+        price: ["'Rozha One'", "'Kurale'", "'Playfair Display'", "Georgia", "serif"],
         sans: ["'Plus Jakarta Sans'", "sans-serif"],
       },
       fontWeight: {

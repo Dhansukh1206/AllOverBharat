@@ -22,7 +22,7 @@ export default function App() {
           WebkitBackdropFilter: "blur(36px) saturate(180%)",
         }}
       >
-        <div className="container-app h-20 flex items-center justify-between">
+        <div className="container-app h-20 flex items-center justify-center md:justify-between">
           <NavLink
             to="/"
             className="flex items-center gap-2.5 sm:gap-3 group px-3.5 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-[#E5DFD5] shadow-xs hover:bg-white/95 transition-all"
@@ -36,7 +36,8 @@ export default function App() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-[#1C1917] leading-tight">
-                AllOver<span className="text-[#F2873B] italic font-bold">Bharat</span>
+                AllOver
+                <span className="text-[#F2873B] italic font-bold">Bharat</span>
               </span>
               <span className="text-[8px] uppercase tracking-[0.2em] text-[#3A7531] font-bold -mt-0.5">
                 Adventure & Travel
@@ -87,7 +88,7 @@ export default function App() {
             </NavLink>
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <NavLink
               to="/profile"
               className={({ isActive }) =>
@@ -111,13 +112,13 @@ export default function App() {
       </main>
 
       <nav
-        className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-xl border-t border-[#E5DFD5] py-2 px-3 flex items-center justify-around text-[10px] font-semibold uppercase tracking-wider shadow-lg"
+        className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-xl border-t border-[#E5DFD5] pt-1.5 pb-[max(0.6rem,env(safe-area-inset-bottom))] px-2 flex items-center justify-around text-[10px] font-semibold uppercase tracking-wider shadow-lg"
         aria-label="Mobile Navigation"
       >
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 ${
               isActive
                 ? "text-[#F2873B] font-bold scale-105"
                 : "text-[#68615A] hover:text-[#1C1917]"
@@ -125,13 +126,13 @@ export default function App() {
           }
         >
           <Home className="h-5 w-5" />
-          <span>Home</span>
+          <span className="leading-tight">Home</span>
         </NavLink>
 
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            `flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 ${
               isActive
                 ? "text-[#F2873B] font-bold scale-105"
                 : "text-[#68615A] hover:text-[#1C1917]"
@@ -139,13 +140,13 @@ export default function App() {
           }
         >
           <Compass className="h-5 w-5" />
-          <span>About</span>
+          <span className="leading-tight">About</span>
         </NavLink>
 
         <NavLink
           to="/blogs"
           className={({ isActive }) =>
-            `flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 ${
               isActive
                 ? "text-[#F2873B] font-bold scale-105"
                 : "text-[#68615A] hover:text-[#1C1917]"
@@ -153,13 +154,13 @@ export default function App() {
           }
         >
           <BookOpen className="h-5 w-5" />
-          <span>Blog</span>
+          <span className="leading-tight">Blog</span>
         </NavLink>
 
         <NavLink
           to="/offers"
           className={({ isActive }) =>
-            `flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 ${
               isActive
                 ? "text-[#F2873B] font-bold scale-105"
                 : "text-[#68615A] hover:text-[#1C1917]"
@@ -167,13 +168,13 @@ export default function App() {
           }
         >
           <Gift className="h-5 w-5" />
-          <span>Offers</span>
+          <span className="leading-tight">Offers</span>
         </NavLink>
 
         <NavLink
           to="/profile"
           className={({ isActive }) =>
-            `flex flex-col items-center gap-1 py-1 px-2.5 rounded-xl transition-all duration-200 ${
+            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 ${
               isActive
                 ? "text-[#F2873B] font-bold scale-105"
                 : "text-[#68615A] hover:text-[#1C1917]"
@@ -183,7 +184,7 @@ export default function App() {
           title="Profile"
         >
           <User className="h-5 w-5" />
-          <span>Profile</span>
+          <span className="leading-tight">Profile</span>
         </NavLink>
       </nav>
 

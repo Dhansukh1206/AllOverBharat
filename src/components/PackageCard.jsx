@@ -67,7 +67,7 @@ export default function PackageCard({ item, onSelect }) {
             <span className="text-[9px] text-[#FAF8F5]/75 uppercase tracking-wider block font-semibold">
               From
             </span>
-            <span className="font-serif text-lg sm:text-xl font-bold text-brand-terracotta">
+            <span className="font-price text-xl sm:text-2xl text-brand-terracotta tracking-wide">
               ₹ {item.price.toLocaleString("en-IN")}
             </span>
           </div>

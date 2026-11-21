@@ -132,7 +132,7 @@ export default function PackageDetails() {
                 Inclusive Price
               </span>
               <div className="flex items-baseline gap-2">
-                <span className="font-serif text-3xl font-bold text-brand-terracotta drop-shadow-xs">
+                <span className="font-price text-3xl sm:text-4xl text-brand-terracotta drop-shadow-xs tracking-wide">
                   ₹ {pkg.price.toLocaleString('en-IN')}
                 </span>
                 <span className="text-xs text-brand-taupe font-normal">
@@ -207,7 +207,7 @@ export default function PackageDetails() {
                   </div>
                   <div className="flex items-center justify-between pt-2 border-t border-brand-border">
                     <span className="text-xs font-semibold">Total Amount:</span>
-                    <span className="font-serif text-xl font-bold text-brand-terracotta">
+                    <span className="font-price text-2xl text-brand-terracotta tracking-wide">
                       ₹ {(pkg.price * travelersCount).toLocaleString('en-IN')}
                     </span>
                   </div>
