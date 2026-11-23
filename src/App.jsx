@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Outlet, NavLink } from "react-router-dom";
 import { User, Home, Compass, BookOpen, Gift } from "./icons.jsx";
+import Footer from "./components/Footer.tsx";
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,12 +32,12 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FAF8F5]/20 to-transparent" />
         </div>
 
-        <div className="container-app h-20 flex items-center justify-center md:justify-between relative z-10">
+        <div className="container-app py-2 flex items-center justify-center md:justify-between relative z-10">
           <NavLink
             to="/"
-            className="flex items-center gap-2.5 sm:gap-3 group px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-md border border-[#E5DFD5] shadow-xs hover:bg-white hover:border-[#F2873B]/40 hover:shadow-sm transition-all duration-300"
+            className="flex items-center gap-2.5 sm:gap-3 group px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-md border border-[#E5DFD5] shadow-xs hover:bg-white hover:border-[#F2873B]/40 hover:shadow-sm transition-colors duration-200"
           >
-            <div className="w-9 h-9 rounded-full overflow-hidden border border-[#E5DFD5] ring-2 ring-[#3A7531]/20 flex items-center justify-center bg-white shadow-xs transition-transform duration-300 group-hover:scale-105 flex-shrink-0">
+            <div className="w-9 h-9 rounded-full overflow-hidden border border-[#E5DFD5] ring-2 ring-[#3A7531]/20 flex items-center justify-center bg-white shadow-xs flex-shrink-0">
               <img
                 src="/images/logo.png"
                 alt="AllOverBharat Logo"
@@ -46,7 +47,7 @@ export default function App() {
             <div className="flex flex-col">
               <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-[#1C1917] leading-tight">
                 AllOver
-                <span className="text-[#F2873B] italic font-bold">Bharat</span>
+                <span className="text-[#F2873B] italic font-bold ml-0.5">Bharat</span>
               </span>
               <span className="text-[8px] uppercase tracking-[0.22em] text-[#3A7531] font-bold -mt-0.5">
                 Adventure & Travel
@@ -197,29 +198,7 @@ export default function App() {
         </NavLink>
       </nav>
 
-      <footer className="border-t border-[#E5DFD5] bg-transparent mt-24 py-16 transition-colors duration-300">
-        <div className="container-app flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <span className="font-serif text-2xl font-bold tracking-tight text-[#1C1917]">
-              AllOver<span className="text-[#F2873B] italic">Bharat</span>
-            </span>
-            <p className="subtitle text-xs max-w-md mt-2">
-              Bespoke travel curations across all 28 states and 8 union
-              territories of Bharat. Crafted for mindful travelers, heritage
-              preservation, and slow discovery.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <p className="text-xs text-[#68615A] tracking-wide">
-              © {new Date().getFullYear()} AllOverBharat • Edition V
-            </p>
-            <span className="text-xs text-[#68615A] tracking-wide font-medium">
-              concierge@alloverbharat.com
-            </span>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
