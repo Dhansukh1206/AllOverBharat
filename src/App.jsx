@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Outlet, NavLink } from "react-router-dom";
 import { User, Home, Compass, BookOpen, Gift } from "./icons.jsx";
 import Footer from "./components/Footer.tsx";
+import { AuthProvider, useAuth } from "./context/AuthContext.jsx";
+import MobileLoginModal from "./components/MobileLoginModal.jsx";
 
-export default function App() {
+function AppContent() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { user, isLoggedIn } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +50,9 @@ export default function App() {
             <div className="flex flex-col">
               <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-[#1C1917] leading-tight">
                 AllOver
-                <span className="text-[#F2873B] italic font-bold ml-0.5">Bharat</span>
+                <span className="text-[#F2873B] italic font-bold ml-0.5">
+                  Bharat
+                </span>
               </span>
               <span className="text-[8px] uppercase tracking-[0.22em] text-[#3A7531] font-bold -mt-0.5">
                 Adventure & Travel
@@ -102,16 +107,42 @@ export default function App() {
             <NavLink
               to="/profile"
               className={({ isActive }) =>
-                `w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer shadow-xs ${
+                `group h-10 px-3.5 rounded-full flex items-center gap-2.5 transition-all duration-300 cursor-pointer shadow-xs ${
                   isActive
-                    ? "bg-[#F2873B] text-white border-2 border-white ring-2 ring-[#F2873B]/50"
-                    : "bg-white/90 text-[#1C1917] border-2 border-[#1C1917]/75 backdrop-blur-md hover:border-[#F2873B] hover:text-[#F2873B] hover:scale-105"
+                    ? "bg-[#1C1917] text-white border border-[#1C1917] shadow-sm"
+                    : "bg-white/90 text-[#1C1917] border border-[#E5DFD5] backdrop-blur-md hover:border-[#F2873B] hover:shadow-sm"
                 }`
               }
-              title="Traveler Profile & Previous Expeditions"
+              title={
+                isLoggedIn
+                  ? `Logged in as ${user?.name || user?.phone}`
+                  : "Traveler Profile & Sign In"
+              }
               aria-label="Traveler Profile"
             >
-              <User className="h-5 w-5" />
+              <div className="relative w-6 h-6 rounded-full p-[1.5px] bg-gradient-to-tr from-[#FF671F] via-[#FAF8F5] to-[#138808] flex items-center justify-center flex-shrink-0">
+                <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  {isLoggedIn && user?.avatar ? (
+                    <img
+                      src={user.avatar}
+                      alt="Profile"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : isLoggedIn ? (
+                    <span className="font-serif text-[10px] font-bold text-[#1C1917]">
+                      {(user?.firstName?.[0] || "T").toUpperCase()}
+                    </span>
+                  ) : (
+                    <User className="h-3 w-3 text-[#1C1917]" />
+                  )}
+                </div>
+                {isLoggedIn && (
+                  <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-[#138808] ring-1.5 ring-white" />
+                )}
+              </div>
+              <span className="text-xs font-semibold font-sans">
+                {isLoggedIn ? user?.firstName || "Account" : "Sign In"}
+              </span>
             </NavLink>
           </div>
         </div>
@@ -120,6 +151,8 @@ export default function App() {
       <main className="flex-1 pb-20 md:pb-0">
         <Outlet />
       </main>
+
+      <MobileLoginModal />
 
       <nav
         className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-xl border-t border-[#E5DFD5] pt-1.5 pb-[max(0.6rem,env(safe-area-inset-bottom))] px-2 flex items-center justify-around text-[10px] font-semibold uppercase tracking-wider shadow-lg"
@@ -184,7 +217,7 @@ export default function App() {
         <NavLink
           to="/profile"
           className={({ isActive }) =>
-            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 ${
+            `flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200 relative ${
               isActive
                 ? "text-[#F2873B] font-bold scale-105"
                 : "text-[#68615A] hover:text-[#1C1917]"
@@ -193,12 +226,38 @@ export default function App() {
           aria-label="Profile"
           title="Profile"
         >
-          <User className="h-5 w-5" />
-          <span className="leading-tight">Profile</span>
+          <div className="relative w-6 h-6 rounded-full p-[1.5px] bg-gradient-to-tr from-[#FF671F] via-[#FAF8F5] to-[#138808] flex items-center justify-center">
+            <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+              {isLoggedIn && user?.avatar ? (
+                <img
+                  src={user.avatar}
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              ) : isLoggedIn ? (
+                <span className="font-serif text-[9px] font-bold text-[#1C1917]">
+                  {(user?.firstName?.[0] || "T").toUpperCase()}
+                </span>
+              ) : (
+                <User className="h-3.5 w-3.5 text-[#1C1917]" />
+              )}
+            </div>
+          </div>
+          <span className="leading-tight">
+            {isLoggedIn ? "Account" : "Sign In"}
+          </span>
         </NavLink>
       </nav>
 
       <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
   );
 }

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import packagesData from "../data/packages.json";
 import PackageCard from "../components/PackageCard.jsx";
 import { CalendarDays, MapPin, ArrowRight, Phone } from "../icons.jsx";
+import { useAuth } from "../context/AuthContext.jsx";
 
 export default function Home() {
+  const { isLoggedIn, requireAuth } = useAuth();
   const [packagesList, setPackagesList] = useState(packagesData);
   const [sortBy, setSortBy] = useState("featured");
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -412,7 +414,13 @@ export default function Home() {
                       </div>
 
                       <button
-                        onClick={() => setBookingSuccess(true)}
+                        onClick={() => {
+                          if (!isLoggedIn) {
+                            requireAuth(() => setBookingSuccess(true));
+                            return;
+                          }
+                          setBookingSuccess(true);
+                        }}
                         className="btn-primary w-full h-12 text-sm font-semibold tracking-wider cursor-pointer"
                       >
                         Confirm Slot Reservation
@@ -437,7 +445,13 @@ export default function Home() {
               </a>
 
               <button
-                onClick={() => setBookingSlotModal(!bookingSlotModal)}
+                onClick={() => {
+                  if (!isLoggedIn) {
+                    requireAuth(() => setBookingSlotModal(true));
+                    return;
+                  }
+                  setBookingSlotModal(!bookingSlotModal);
+                }}
                 className="btn-primary flex-1 text-center py-3 flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>

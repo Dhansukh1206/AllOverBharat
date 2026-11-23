@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { useParams, NavLink } from 'react-router-dom'
 import data from '../data/packages.json'
 import { MapPin, CalendarDays, ArrowRight, Phone } from '../icons.jsx'
+import { useAuth } from '../context/AuthContext.jsx'
 
 export default function PackageDetails() {
+  const { isLoggedIn, requireAuth } = useAuth()
   const { slug } = useParams()
   const pkg = data.find(p => p.slug === slug)
   const [activeImg, setActiveImg] = useState(null)
@@ -154,7 +156,13 @@ export default function PackageDetails() {
             </a>
 
                         <button
-              onClick={() => setBookingSlotModal(!bookingSlotModal)}
+              onClick={() => {
+                if (!isLoggedIn) {
+                  requireAuth(() => setBookingSlotModal(true))
+                  return
+                }
+                setBookingSlotModal(!bookingSlotModal)
+              }}
               className="btn-primary flex-1 text-center flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>{bookingSlotModal ? "Close Booking" : "Book Slot"}</span>
@@ -212,7 +220,13 @@ export default function PackageDetails() {
                     </span>
                   </div>
                   <button
-                    onClick={() => setBookingSuccess(true)}
+                    onClick={() => {
+                      if (!isLoggedIn) {
+                        requireAuth(() => setBookingSuccess(true))
+                        return
+                      }
+                      setBookingSuccess(true)
+                    }}
                     className="btn-primary w-full h-11 text-xs font-semibold cursor-pointer"
                   >
                     Confirm Slot Reservation
